@@ -1,7 +1,7 @@
-doctype
-html
-    head
-        link(href="/favicon.ico", rel="shortcut icon", type="image/x-icon")
-    body
-        hi Hello World
+extends ../includes/layout
 
+
+block main-content
+    section.content
+        h1 Hello World
+        h2= mongoMessage
