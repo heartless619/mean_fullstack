@@ -10,7 +10,7 @@ const autoprefixer = require('autoprefixer');
 const execSync = require('child_process').execSync;
 
 const versionText = 'MEAN_STACK V';
-const majorVersion = '1';
+const majorVersion = '0';
 const buildNumber = execSync('git rev-list HEAD --count').toString().trim();
 const hashNumber = execSync('git rev-parse HEAD').toString().trim();
 
@@ -78,6 +78,7 @@ const config = {
                 test: /\.css$/,
                 loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader')
             },
+
             {
                 test: /\.js$/,
                 loader: 'ng-annotate!babel?cacheDirectory',

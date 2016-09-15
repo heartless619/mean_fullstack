@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Silkkitie Ravintola</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="Description" content="Kiinalainen Ravintola Jämsässä. Silkkitie Ravintola Keskuskatu 7, 42100 Jämsä">
+    <meta name="Keywords" content="Jämsä Chinese Restaurant. Kiinalainen Ravintola Jämsässä">
     <link href="../public/favicon.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
-    <section class="content">
-        <h1>Hello World</h1>
+    <div class="container">
+        <com-navbar></com-navbar>
+        <div class="panel-body">
+            <div ui-view></div>
+        </div>
+    </div>
+    <lintu-footer></lintu-footer>
 
-    </section>
 </body>
 </html>

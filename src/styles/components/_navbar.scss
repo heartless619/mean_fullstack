@@ -1,0 +1,15 @@
+@import "../base";
+
+/*
+ * Main header
+*/
+
+$navbar-height: 60px;
+$navbar-width: 140px;
+$navbar-background-color: $accent-content-background-color;
+$navbar-color: $accent-content-color;
+$navbar-active-border-color: #FFBE00;
+$navbar-active-border: 3px solid $navbar-active-border-color;
+$navbar-text-transform: $content-text-transform;
+$navbar-font-size: 15px;
+$navbar-font-weight: $secondary-action-button-font-weight;

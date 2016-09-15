@@ -1,0 +1,85 @@
+/*
+ * Default colors are overridden by customer specific colors.
+ */
+@import 'customer.colors';
+
+
+/*
+ * Colours
+*/
+$body-background: #9F9F9F;
+// "Accent content" is used in navigation and login header, for example.
+// (corresponds to md-hue-2 class in angular material design)
+$accent-content-background-color: $SilkkatieRavintola-Black-100; // #502CA7;
+$accent-content-background-color-lighter: #6639B6;
+$accent-content-background-color-lightest: #D0C3E8;
+$accent-content-background-color-light: $SilkkatieRavintola-Black-10;
+
+$accent-content-color: #FFF;
+$content-color-black: #000;
+
+// corresponds to md-hue-1 in angular-material-design
+$content-light-background-color: #FFF;
+$content-gray-background-color: #B5B5B5;
+$content-dark-gray-background-color: #717171;
+$content-black-background-color: $content-color-black;
+
+$content-background-color: $content-light-background-color;
+$content-color: $content-black-background-color;
+$content-highlight: $SilkkatieRavintola-Yellow-100;
+$content-box-shadow: rgba(0,0,0,0.4) 2px 2px 4px;
+
+/*
+ * Input styling
+*/
+$highlight: $content-highlight;
+$valid: #4FC6AF;
+$invalid: #C8000A;
+$input-border-color: $content-light-background-color;
+$input-border-highlight: $content-highlight;
+$placeholder: #CCC;
+$focused-md-input-valid: $accent-content-background-color;
+
+/*
+ * Dialogs
+ */
+$dialog-background: $accent-content-color;
+$dialog-color: #000;
+
+$dialog-content-background: $dialog-background;
+$dialog-content-color: $dialog-color;
+
+$dialog-actions-background: $dialog-background;
+$dialog-actions-color: $dialog-color;
+
+/*
+ * Buttons
+ */
+$button-color: $accent-content-color;
+$icon-button-color: $button-color;
+$borderless-button-color: $SilkkatieRavintola-Blue-100; // $accent-content-background-color;
+$borderless-button-hover-color: $SilkkatieRavintola-Yellow-100;
+$borderless-button-hover-background-color: transparent; // rgba(80,44,167,0.2);
+
+$secondary-action-button-color: $SilkkatieRavintola-Black-100; // $button-color;
+$secondary-action-button-background-color: $SilkkatieRavintola-Yellow-100; // $accent-content-background-color;
+$secondary-action-button-hover-background-color: $SilkkatieRavintola-Yellow-65; // $accent-content-background-color;
+
+$main-action-button-color: $SilkkatieRavintola-Black-100; // $button-color;
+$main-action-button-background-color: $SilkkatieRavintola-Yellow-100; // $content-highlight;
+$main-action-button-hover-background-color: $SilkkatieRavintola-Yellow-65; // $content-highlight
+
+/*
+ *Sub-headers
+ */
+$sub-header-background-yellow: $SilkkatieRavintola-Yellow-100;
+$sub-header-yellow-color: $SilkkatieRavintola-Black-100;
+$sub-header-background-grey: #666666;
+$sub-header-white-color:  white;
+
+$corporate-table-header:  #666666;
+
+/*
+  *Utilities
+  */
+$utility-column-right-color: $SilkkatieRavintola-Red-65;

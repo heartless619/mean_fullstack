@@ -6,6 +6,8 @@ const ngModule = angular.module('app', [
 
 ]);
 
+require('./submodules')(ngModule);
+
 angular.element(document)
     .ready(function() {
         angular.bootstrap(document, [ngModule.name], {});

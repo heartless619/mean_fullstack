@@ -1,0 +1,66 @@
+@import "mixins";
+@import "colors";
+
+$logo-width: 60px;
+$logo-height: 60px;
+
+$content-background-size: cover;
+$content-background-attachment: fixed;
+
+$utility-font-size-small: 12px;
+$utility-font-size-medium: 14px;
+$utility-font-size-big: 16px;
+/*
+ * Spacing and kerning
+*/
+$base-margin: 16px;
+
+$body-font-family: "Myriad", sans-serif;
+$content-text-transform: capitalize;
+
+
+/*
+ * Buttons
+*/
+$secondary-action-button-font-weight: bold;
+$user-service-list-item-height: 70px;
+
+/*
+  * Subheader
+  */
+$content-sub-header-text-transform: uppercase;
+
+/*
+  * Utilities
+*/
+$utility-column-right-text: right;
+$utility-font-weight-semi-bold: 600;
+$utility-column-left-text-transform: capitalize;
+
+
+*:focus{
+    outline: none;
+}
+
+.clickable{
+	cursor: pointer;
+}
+
+/*
+  * Typegraphy
+*/
+.pull-right-text
+{
+  text-align:right;
+}
+.capitalize
+{
+  text-transform: capitalize;
+}
+
+$user-service-font-size: 14px;
+$user-service-font-weight: 600;
+$user-service-line-height: 20px;
+$content-semi-bold: 600;
+$content-sub-heading: 20px;
+$content-font-size-normal: 14px;
