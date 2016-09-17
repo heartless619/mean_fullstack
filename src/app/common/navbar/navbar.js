@@ -1,8 +1,9 @@
 class NavbarCtrl {
-     constructor($scope, $rootScope, TranslateService) {
+     constructor($scope, $rootScope, $state, TranslateService) {
         Object.assign(this, {
             $scope,
             $rootScope,
+            $state,
             TranslateService
         });
          var vm = this;
@@ -19,7 +20,18 @@ class NavbarCtrl {
              vm.$rootScope.$emit('langChanged', lang);
          }
 
+
+
     }
+
+    shouldBeActive(parentState) {
+        if (this.$state.current.name) {
+            console.log('current state', this.$state);
+            return this.$state.current.name.includes(parentState);
+        }
+        return false;
+    }
+
 }
 
 function NavbarDirective() {
@@ -30,9 +42,7 @@ function NavbarDirective() {
         replace: true,
         template: require('./navbar.html'),
         controller: NavbarCtrl,
-        controllerAs: 'vm',
-        link: (scope, elem, attrs, ctrl) => {
-        }
+        controllerAs: 'vm'
     };
 }
 

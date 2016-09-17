@@ -1,0 +1,58 @@
+/**
+ * Extend input styles with customer specific classes
+ */
+@import 'customer.input';
+
+/* do not group these rules */
+*::-webkit-input-placeholder {
+    color: $placeholder !important;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: $placeholder !important;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: $placeholder !important;
+}
+*:-ms-input-placeholder {
+  /* IE 10+ */
+  color: $placeholder !important;
+} 
+
+.clm-input {
+    @extend .customer-input;
+}
+
+.clm-label {
+    @extend .customer-label;
+    .invalid{
+        color: red;
+    }
+}
+
+.clm-description {
+    @extend .customer-description;
+}
+
+.clm-error-message {
+    @extend .customer-error-msg;
+}
+
+.clm-formly-error-message {
+    @extend .customer-error-msg;
+    top: 30px;
+    right: 20px;
+}
+
+.clm-formly-error-messages {
+    @extend .customer-formly-error-messages;
+}
+
+.clm-select {
+    @extend .customer-select;
+}
+
+.phonenumber input{
+  margin-bottom: 10px !important;
+}

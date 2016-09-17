@@ -1,0 +1,11 @@
+@import '../base';
+
+$footer-color: #FFF;
+$footer-background: #000;
+$footer-font-size: 1.0em;
+$footer-min-height: 100px;
+
+
+$footer-background-size: $logo-width $logo-height; // 100px 24px;
+$footer-img-height: $logo-height;
+$footer-img-width: $logo-width;

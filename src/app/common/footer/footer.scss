@@ -1,9 +1,36 @@
+@import '../../../styles/components/footer';
+
 .footer {
-    position: absolute;
+    color: $footer-color;
+    background: $footer-background;
+    font-size: $footer-font-size;
+    text-align: center;
+    min-height: $footer-min-height;
+    position: fixed;
     bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    background-color: #333333;
-    color: white;
+
+    .footer-logo {
+        height: $footer-img-height;
+        width: $footer-img-width;
+        float: left;
+        background-size: $footer-background-size;
+        background-position: 50% 50%;
+    }
+
+    .footer-copyright {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .footer-version {
+      @extend .footer-copyright;
+      font-size: 16px;
+      margin-top: 0;
+    }
+
+    @media only screen and (max-width: 960px) {
+        .footer-copyright {
+            line-height: $footer-min-height;
+        }
+    }
 }

@@ -1,0 +1,293 @@
+/*
+ * Angular material styles can be overriden here.
+ */
+$input-container-margin: 0 0;
+md-input-container {
+  margin: $input-container-margin;
+}
+
+md-radio-button {
+
+    &.md-checked {
+
+        .md-off {
+            border-color: rgba(0,0,0,0.54);
+        }
+    }
+
+    .md-on {
+        background-color: #FFBE00 !important;
+    }
+}
+
+md-backdrop.md-sidenav-backdrop {
+    background-color: #000 !important;
+    opacity: 0.48 !important;
+}
+
+md-input-container textarea.md-input{
+  height: 150px !important;
+  border-left: 1px solid $input-border-color !important;
+  border-right: 1px solid $input-border-color !important;
+  border-top: 1px solid $input-border-color !important;
+  border-bottom: 2px solid $input-border-highlight !important;
+}
+
+.md-input::-ms-clear {
+  display: none!important;
+}
+
+/*
+ * Customer specific colors added here
+ */
+md-input-container:not(.md-input-invalid).md-input-focused {
+  label {
+    color: $SilkkatieRavintola-Black-100;
+  }
+  .md-input {
+    border-color: $SilkkatieRavintola-Black-100;
+  }
+}
+
+[disabled] md-input-container .md-input, md-input-container .md-input[disabled]{
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  color: black;
+}
+
+md-option .md-text {
+  text-transform: $content-text-transform !important;
+}
+
+.md-title {
+  text-transform: $content-text-transform !important;
+}
+
+/*
+ * Select (user-services, help category mobile, announcements mobile)
+ */
+md-select {
+    .md-select-value {
+        border-bottom-color: $input-border-highlight !important;
+    }
+
+    .md-select-value:first-child {
+        color: $content-color;
+        text-transform: $content-text-transform;
+    }
+}
+
+.md-select-menu-container {
+    md-option {
+        color: $content-color;
+    }
+
+    md-option[selected] {
+        color: $accent-content-background-color;
+    }
+
+    md-option[selected]:active {
+        color: $accent-content-background-color;
+    }
+
+    md-option:active {
+        background-color: $accent-content-background-color;
+    }
+}
+
+// Currently only language options
+.md-open-menu-container.md-active {
+    z-index: 9999;
+
+    md-menu-item {
+        // Override borderless button styles if needed
+        .md-button {
+            color: $content-color !important;
+        }
+
+        .md-button:hover {
+            background-color: $borderless-button-hover-background-color !important;
+        }
+    }
+}
+
+/*
+ * Option list (affects user-services list and help category list)
+ */
+md-list {
+    md-list-item {
+        // Override borderless button styles if needed
+        .md-button {
+            color: $content-color !important;
+        }
+
+        .md-button:hover {
+            background-color: $borderless-button-hover-background-color !important;
+        }
+    }
+}
+
+/*
+ * Buttons
+ */
+// borderless button (affects lists as well, e.g. user-services list and language selection)
+
+.md-button {
+
+    &[disabled] {
+        cursor: not-allowed !important;
+    }
+}
+
+a.md-button, .md-button,
+a.md-button:not([disabled]), .md-button:not([disabled]) {
+    color: $borderless-button-color;
+    text-transform: $content-text-transform;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+a.md-button:not([disabled]):hover, .md-button:not([disabled]):hover {
+    color: $borderless-button-hover-color;
+    background-color: $borderless-button-hover-background-color;
+}
+
+// icon button
+.md-button.md-icon-button {
+    color: $icon-button-color;
+}
+
+// secondary action button
+a.md-button.md-raised, .md-button.md-raised,
+a.md-button.md-raised:not([disabled]), .md-button.md-raised:not([disabled]) {
+  color: $secondary-action-button-color;
+  background-color: $secondary-action-button-background-color;
+  box-shadow: none;
+  border-radius: 0px;
+  font-family: MyriadSemiBold;
+}
+
+a.md-button.md-raised:not([disabled]):hover, .md-button.md-raised:not([disabled]):hover {
+  background-color: $secondary-action-button-hover-background-color;
+}
+
+// main action buttons
+a.md-button.md-primary.md-raised, .md-button.md-primary.md-raised,
+a.md-button.md-primary.md-raised:not([disabled]), .md-button.md-primary.md-raised:not([disabled]) {
+    color: $main-action-button-color;
+    background-color: $main-action-button-background-color;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+a.md-button.md-primary.md-raised:not([disabled]):hover, .md-button.md-primary.md-raised:not([disabled]):hover {
+    background-color: $main-action-button-hover-background-color;
+}
+
+md-toast {
+  z-index: 999;
+
+  span {
+    color: #FFF;
+  }
+}
+
+md-dialog.md-default-theme, md-dialog {
+    background: $dialog-background;
+    color: $dialog-color;
+
+    .md-dialog-content {
+        background: $dialog-content-background;
+        color: $dialog-content-color;
+    }
+
+    md-dialog-actions {
+        background: $dialog-actions-background;
+        color: $dialog-actions-color;
+    }
+}
+
+md-content {
+    background-color: $content-light-background-color;
+}
+
+md-progress-linear {
+
+    .md-container {
+        background-color: $content-dark-gray-background-color;
+    }
+
+    .md-bar {
+        background-color: $accent-content-background-color;
+    }
+}
+
+.md-success {
+  color: $valid
+}
+
+.md-warn {
+  color: $invalid;
+}
+
+.md-warn-orange {
+    color: $SilkkatieRavintola-Yellow-100;
+}
+
+
+md-datepicker {
+    border-bottom: 1px solid $SilkkatieRavintola-Black-30;
+    margin-right: 0;
+    padding: 2px;
+
+    .md-datepicker-input-container {
+        border-bottom: none;
+    }
+}
+
+
+.md-datepicker-calendar-pane {
+    box-shadow: none;
+    border: none;
+}
+
+.md-pane-open .md-datepicker-calendar {
+    border: 1px solid rgb(224,224,224);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+}
+
+.md-datepicker-input-mask-opaque {
+    display: none;
+}
+/*
+  * Tabs
+  */
+
+md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar{
+  background: $SilkkatieRavintola-Black-65;
+  height:3px;
+}
+md-tabs[md-border-bottom] md-tabs-wrapper {
+  border-color: $SilkkatieRavintola-Yellow-100;
+  top:-1px;
+}
+md-tabs-canvas {
+  overflow: visible;
+  height: 46px;
+}
+md-tabs .md-tab.md-active {
+  color: $SilkkatieRavintola-Black-65;
+  font-family: MyriadSemiBold;
+  text-transform: capitalize;
+  font-size:1.0em;
+}
+md-tabs .md-tab {
+  color: $SilkkatieRavintola-Black-30;
+  font-family: MyriadSemiBold;
+  text-transform: capitalize;
+  font-size:1.0em;
+}
+md-tabs .md-tab:hover {
+  color: $SilkkatieRavintola-Yellow-100;
+}

@@ -1,0 +1,147 @@
+/**
+ * Set customer specific input styles here. Keep in mind these may require changes to the html.
+ *
+ * Currently the styles are not "compatible" with angular material input styles, if these are
+ * overriden, update the input html.
+ */
+
+$mtn-input-height: 54px;
+$mtn-input-error-msg-margin-top: 8px;
+
+.customer-input {
+  @include field-common;
+  @include field-border;
+  @include field-validation;
+  padding-bottom: 2px;
+  height: $mtn-input-height;
+  margin-bottom: 25px;
+  text-indent: 18px;
+}
+
+.customer-input::-ms-clear {
+  display: none;
+}
+
+.customer-label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+md-input-container:last-child {
+    margin-bottom: 10px;
+}
+
+md-input-container .md-errors-spacer {
+    min-height: 0px !important;
+}
+
+.customer-error-msg {
+    position: absolute !important;
+    right: 19px;
+    color: $invalid;
+    top: $mtn-input-height + $mtn-input-error-msg-margin-top;
+
+    opacity: 1;
+    transition: .3s linear all;
+    font-size: .8em;
+
+    &.ng-enter.ng-enter-active {
+        opacity: 1;
+        top: 0;
+    }
+
+    &.ng-enter {
+        opacity: 0;
+        top: -20px;
+    }
+
+    &.ng-leave {
+        opacity: 1;
+        top: 0;
+    }
+
+    &.ng-leave-active {
+        opacity: 0;
+        top: 20px;
+    }
+}
+
+.customer-select {
+  @include field-border($top: 'top', $right: 'right', $bottom: 'bottom', $left:'left');
+  @include field-validation;
+  @include field-common;
+  margin-top: 0px;
+  &.md-select-icon{
+    margin-right: 18px;
+    margin-left: 18px;
+  }
+}
+
+md-select {
+    // MTN override
+    .md-select-value {
+        border-bottom: none !important;
+
+        .md-select-icon {
+            margin-right: 18px;
+            margin-left: 18px;
+        }
+    }
+}
+
+.customer-radiobuttons{
+  padding-bottom: 2px;
+  height: $mtn-input-height;
+  margin-bottom: 25px;
+}
+
+.customer-datepicker{
+  @include field-border;
+  @include field-validation;
+  margin-bottom: 25px;
+  height: $mtn-input-height;
+  background-color: white;
+}
+
+.customer-description{
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.customer-desc-margin{
+  position: absolute;
+  top: 76px;
+}
+
+.customer-deactive{
+  color: grey;
+  background-color: gainsboro;
+}
+
+.customer-button{
+  padding: 5px;
+}
+.customer-button:hover{
+  box-shadow: 1px 1px 2px #ccc;
+  color: gainsboro;
+}
+
+.customer-formly-error-messages {
+  position: relative;
+  top: -$mtn-input-height;
+  width: 100%;
+
+  &.ng-active {
+    /* messages are showing */
+  }
+
+  &.ng-inactive {
+    /* messages are not showing */
+  }
+}
+
+.customer-formly-error-message{
+  position: absolute;
+  right: 18px;
+}
+
